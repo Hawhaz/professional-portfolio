@@ -1,0 +1,24 @@
+# These owners will be the default owners for everything in the repo.
+# Unless a later match takes precedence, they will be requested for
+# review when someone opens a pull request.
+*       @Hawhaz
+
+# Order is important; the last matching pattern takes the most precedence.
+
+# Core components
+/src/components/       @Hawhaz
+/src/constants/        @Hawhaz
+
+# 3D elements
+/src/components/canvas/ @Hawhaz
+
+# Build configuration
+*.js        @Hawhaz
+*.cjs       @Hawhaz
+*.json      @Hawhaz
+
+# Documentation
+*.md        @Hawhaz
+
+# GitHub specific files
+/.github/   @Hawhaz
