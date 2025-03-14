@@ -1,0 +1,33 @@
+@media(min-width:600px){.footer__logo__link{margin:24px 0}
+.footer__list{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;margin:auto}
+.footer__list .link{width:auto}
+}
+@media(min-width:600px) and (max-width:991px){.footer__logo{margin-bottom:32px}
+.footer__copyright{margin-bottom:16px}
+}
+@media(min-width:992px){.footer__base{text-align:left}
+.footer__base .container{padding:0 16px;position:relative}
+.footer__logo{text-align:left;max-width:168px;margin:0;width:auto}
+.footer__logo__link{margin:0}
+.footer__list{width:688px;float:left;margin-left:16px;margin-right:16px;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;margin:0 32px 0 0}
+.footer__list>.link__content{display:none}
+.footer__list .link a{padding:8px 0;margin-right:40px}
+.footer__list .link__content{text-align:right;padding-right:0}
+.footer__optional{max-width:350px;margin:0 0 0 auto;display:-webkit-box;display:-ms-flexbox;display:flex}
+.footer__optional .link__content{text-align:right;display:block;padding:8px 0 8px 8px;margin:0}
+.footer__optional .footer__secondarylogo__link{height:42px}
+.footer__optional .footer__secondarylogo__link img{margin:0;padding-top:16px}
+.footer__social{position:absolute;top:0;right:16px;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;-webkit-box-align:baseline;-ms-flex-align:baseline;align-items:baseline}
+.footer__social .bbva-icon{margin-right:8px}
+.footer__social .footer__sociallinks{display:-webkit-box;display:-ms-flexbox;display:flex;width:auto;margin:0}
+.footer__social .footer__sociallinks a:first-child .bbva-icon{margin-left:0}
+.footer__languages{display:inline-block;margin:0}
+.footer__disclaimer,.footer__links{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start}
+.footer__links{margin-top:40px}
+.footer__disclaimer{margin-top:40px}
+.footer__copyright{max-width:70%;text-align:left;padding:0;margin:0 32px 0 0}
+.footer__claim{max-width:350px;margin:0}
+.footer__claim .claim__content{font-size:13px;line-height:16px}
+.footer__claim .claim__content{position:absolute;right:16px;bottom:0}
+.footer__divider{display:block;border-left:1px solid #fff;height:24px;margin:0 24px;-ms-flex-item-align:center;align-self:center}
+}

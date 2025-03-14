@@ -1,0 +1,10 @@
+@media(min-width:992px){.featuredoutstandingopportunitycard__image{height:calc(50% + 16px);max-height:calc(50% + 16px);overflow:hidden}
+.featuredoutstandingopportunitycard__image--large{max-height:initial;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1}
+.featuredoutstandingopportunitycard__image--large+.featuredoutstandingopportunitycard__content{-webkit-box-flex:0;-ms-flex-positive:0;flex-grow:0}
+.keyboard-focus .featuredoutstandingopportunitycard__imagelink:focus .featuredoutstandingopportunitycard__img{outline:4px solid #1973b8;outline-offset:-8px}
+.featuredoutstandingopportunitycard__img{min-height:100%}
+.featuredoutstandingopportunitycard__content{padding:24px;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
+.featuredoutstandingopportunitycard__title{font-size:26px}
+.featuredoutstandingopportunitycard__title .bbva-svgicon{height:24px;width:24px}
+.featuredoutstandingopportunitycard__subtitle{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1}
+}

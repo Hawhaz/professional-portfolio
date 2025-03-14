@@ -1,0 +1,16 @@
+@media(min-width:600px){.microillustration__base{padding:0 16px}
+.microillustration__component{width:205.26316%;float:left;margin-right:5.26316%}
+.microillustration__wrapper{height:184px;width:184px;border-radius:92px}
+.microillustration__animation{height:72px;width:72px;margin-top:56px}
+.microillustration__image{width:72px}
+.microillustration__title{margin-top:24px}
+}
+@media(min-width:600px) and (max-width:991px){.microillustration__base{padding:24px 16px}
+}
+@media(min-width:992px){.microillustration__component{width:100%;float:left;margin-left:0;margin-right:0}
+.container--full>.microillustration__component{padding:0}
+.microillustration__title{font-size:26px}
+}
+@media(min-width:1200px){.microillustration__component{width:100%;float:left;margin-left:0;margin-right:0}
+.container--full>.microillustration__component{padding:0}
+}

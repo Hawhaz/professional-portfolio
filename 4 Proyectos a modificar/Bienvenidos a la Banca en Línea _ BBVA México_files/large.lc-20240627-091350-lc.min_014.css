@@ -1,0 +1,35 @@
+@media(min-width:600px){.cardsmodule__base .swiper-pagination{margin:40px 0 0}
+.cardsmodule__items{float:none}
+}
+@media(min-width:600px) and (max-width:991px){.cardsmodule__limit .card{padding:0 16px}
+.cardsmodule__base{padding-top:64px;padding-bottom:64px}
+}
+@media(min-width:992px){.cardsmodule__base{padding-top:72px;padding-bottom:80px}
+.cardsmodule__base .swiper-wrapper{display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;min-width:100%;width:auto;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;margin-top:8px}
+.cardsmodule__base .swiper-wrapper .card{width:auto;-ms-flex-item-align:stretch;align-self:stretch}
+.cardsmodule__base .swiper-wrapper .card .card__base,.cardsmodule__base .swiper-wrapper .card .card__container{height:100%}
+.cardsmodule--single .card__linkswrapper,.cardsmodule--single.swiper-wrapper .card__linkswrapper{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}
+.cardsmodule--single .card,.cardsmodule--single.swiper-wrapper .card{width:100%}
+.cardsmodule--single .card .card__title__container,.cardsmodule--single.swiper-wrapper .card .card__title__container{margin-top:36px}
+.cardsmodule--single .card .card__body,.cardsmodule--single .card .card__title,.cardsmodule--single.swiper-wrapper .card .card__body,.cardsmodule--single.swiper-wrapper .card .card__title{max-width:90%}
+.cardsmodule--single .card .card__base,.cardsmodule--single.swiper-wrapper .card .card__base{width:100%;margin:0}
+.cardsmodule--single .card .card__content,.cardsmodule--single .card .card__footer,.cardsmodule--single.swiper-wrapper .card .card__content,.cardsmodule--single.swiper-wrapper .card .card__footer{width:calc(100% - 288px)}
+.cardsmodule--single .card .card__footer,.cardsmodule--single.swiper-wrapper .card .card__footer{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:baseline;-ms-flex-align:baseline;align-items:baseline}
+.cardsmodule--single .card .card__footer--small,.cardsmodule--single.swiper-wrapper .card .card__footer--small{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start}
+.cardsmodule--single .card .card__btn,.cardsmodule--single.swiper-wrapper .card .card__btn{margin:4px 32px 0 0}
+.cardsmodule--single .card .card__image,.cardsmodule--single.swiper-wrapper .card .card__image{width:288px;min-width:288px;height:100%;max-height:100%;position:absolute;top:0;right:0}
+.cardsmodule--single .card .card__img,.cardsmodule--single.swiper-wrapper .card .card__img{height:100%;-o-object-fit:cover;object-fit:cover;max-width:none}
+.cardsmodule--center{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
+.cardsmodule__title{font-size:36px;line-height:40px}
+.cardsmodule__title{max-width:80%;margin-bottom:24px}
+.cardsmodule__subtitle{font-size:20px}
+.cardsmodule__slider{font-size:20px}
+}
+@media screen and (min-width:992px) and (-ms-high-contrast:active),(min-width:992px) and (-ms-high-contrast:none){.cardsmodule--single .card .card__img,.cardsmodule--single.swiper-wrapper .card .card__img{min-height:100%;display:block;position:absolute;top:-9999px;bottom:-9999px;left:-9999px;right:-9999px;margin:auto;width:auto;min-width:100%;max-width:none;-o-object-fit:cover;object-fit:cover}
+}
+@media(min-width:992px) and (max-width:1199px){.tabs__content__item .cardsmodule{margin:0 calc((100vw - 928px)/ -2)}
+}
+@media(min-width:1200px){.cardsmodule--single .card .card__content,.cardsmodule--single .card .card__footer,.cardsmodule--single.swiper-wrapper .card .card__content,.cardsmodule--single.swiper-wrapper .card .card__footer{width:calc(100% - 360px)}
+.cardsmodule--single .card .card__image,.cardsmodule--single.swiper-wrapper .card .card__image{width:360px;min-width:360px}
+.tabs__content__item .cardsmodule{margin:0 calc((100vw - 1144px)/ -2)}
+}

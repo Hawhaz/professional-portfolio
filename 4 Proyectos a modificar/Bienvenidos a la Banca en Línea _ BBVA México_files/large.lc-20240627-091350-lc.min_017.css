@@ -1,0 +1,23 @@
+@media(min-width:600px){.productslider__overlay{height:100%}
+.productslider .linkwithicon{width:auto}
+.productslider .slider .swiper-pagination{display:none}
+.productslider .swiper-wrapper--centered{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
+}
+@media(min-width:600px) and (max-width:991px){.productslider .linkwithicon{width:auto;padding:0 24px}
+.productslider .linkwithicon:first-of-type{padding-left:40px}
+.productslider .linkwithicon:last-of-type{padding-right:40px}
+}
+@media(min-width:600px) and (max-width:1199px){.productslider .linkwithicon__link{margin:32px 0}
+}
+@media(min-width:992px){.productslider__overlay{display:none}
+.productslider .linkwithicon:first-of-type{padding-left:0}
+.productslider .linkwithicon:last-of-type{padding-right:0}
+.productslider .linkwithicon__link{margin:64px 0;height:5.33em}
+.productslider .linkwithicon__link{margin:64px 16px}
+.productslider .linkwithicon__link:hover .bbva-svgicon{top:-16px}
+.productslider .linkwithicon__text{width:100%;padding:0}
+}
+@media(min-width:992px) and (max-width:1200px){.productslider .linkwithicon__link{width:128px;float:left;margin-left:16px;margin-right:16px}
+}
+@media(min-width:1200px){.productslider .linkwithicon__link{width:164px;float:left;margin-left:16px;margin-right:16px}
+}

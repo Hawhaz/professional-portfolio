@@ -1,0 +1,29 @@
+@media(min-width:600px){.outstandingopportunity__line{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch}
+.outstandingopportunitymodule__base{padding-top:64px;padding-bottom:64px}
+}
+@media(min-width:600px) and (max-width:991px){.outstandingopportunity__subtitle{margin-bottom:8px}
+.outstandingopportunity__featured{-webkit-box-sizing:border-box;box-sizing:border-box;width:100%;float:left;padding-left:16px;padding-right:16px}
+.outstandingopportunity__left,.outstandingopportunity__right{-webkit-box-sizing:border-box;box-sizing:border-box;width:100%;float:left;padding-left:16px;padding-right:16px}
+.outstandingopportunity__card{-webkit-box-sizing:border-box;box-sizing:border-box;width:50%;float:left;padding-left:16px;padding-right:16px;margin:0;padding:0}
+.outstandingopportunity__card:first-child{padding-right:8px}
+.outstandingopportunity__card:last-child{margin-bottom:0;padding-left:8px}
+}
+@media(min-width:992px){.outstandingopportunity__title{font-size:36px;line-height:40px}
+.outstandingopportunity__title{max-width:80%;margin:8px auto 16px}
+.outstandingopportunity__subtitle{margin-bottom:16px}
+.outstandingopportunity__cards{display:-webkit-box;display:-ms-flexbox;display:flex}
+.outstandingopportunity__featured{display:block;margin-top:0;margin-bottom:0;min-height:432px}
+.outstandingopportunity__featured--right{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1}
+.outstandingopportunity__actions{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:baseline;-ms-flex-align:baseline;align-items:baseline;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
+.outstandingopportunitymodule__base{padding-top:72px;padding-bottom:72px}
+}
+@media(min-width:992px) and (max-width:1199px){.outstandingopportunity__featured{width:448px;float:left;margin-left:16px;margin-right:16px}
+.outstandingopportunity__left,.outstandingopportunity__right{width:448px;float:left;margin-left:16px;margin-right:16px}
+.outstandingopportunity__card{width:208px;float:left;margin-left:16px;margin-right:16px;margin:0}
+.outstandingopportunity__card:last-child{margin-left:32px}
+}
+@media(min-width:1200px){.outstandingopportunity__featured{width:556px;float:left;margin-left:16px;margin-right:16px}
+.outstandingopportunity__left,.outstandingopportunity__right{width:556px;float:left;margin-left:16px;margin-right:16px}
+.outstandingopportunity__card{width:262px;float:left;margin-left:16px;margin-right:16px;margin:0}
+.outstandingopportunity__card:last-child{margin-left:32px}
+}

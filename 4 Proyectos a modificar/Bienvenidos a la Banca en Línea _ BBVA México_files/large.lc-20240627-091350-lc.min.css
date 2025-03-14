@@ -1,0 +1,12 @@
+@media(min-width:600px){.outstandingopportunitycard__base--ilustration .outstandingopportunitycard__image__wideoutstanding{height:100%;max-height:120px}
+.outstandingopportunitycard__content__wideoutstanding{width:276px;padding:32px;height:auto}
+.outstandingopportunitycard__content__wideoutstanding:nth-child(2){width:60%}
+.outstandingopportunitycard__widewrapper{margin-top:0}
+.outstandingopportunitycard__widewrapper{width:40%;height:100%}
+}
+@media(min-width:600px) and (max-width:991px){.outstandingopportunitycard__base--ilustration .outstandingopportunitycard__content__wideoutstanding:nth-child(2){width:60%;height:auto;display:inline-block}
+}
+@media(min-width:992px){.outstandingopportunitycard__base--ilustration .outstandingopportunitycard__content__wideoutstanding:nth-child(2){width:60%;display:inline-block;height:100%}
+.outstandingopportunitycard__link{max-height:48px;-webkit-line-clamp:2}
+.outstandingopportunitycard__widewrapper{width:40%}
+}

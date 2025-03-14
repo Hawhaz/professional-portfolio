@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Arenq';
+  src: url('./fonts/arenq.otf');
+}
+
+@font-face {
+  font-family: 'Mova';
+  src: url('./fonts/mova.otf');
+}
+
+@font-face {
+  font-family: 'Beckman';
+  src: url('./fonts/beckman.otf');
+}
+
+@font-face {
+  font-family: 'Overcame Bold';
+  src: url('./fonts/overcame-bold.woff');
+}
+
+@font-face {
+  font-family: 'Overcame Outline';
+  src: url('./fonts/overcame-outline.woff');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+/* Animaciones para el menú móvil */
+.menu {
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu-open {
+  transform: translateX(0);
+}
+
+.menu-close {
+  transform: translateX(100%);
+}
+
+/* Overlay para el menú móvil */
+.overlay {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.overlay-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Estilos para los dados 3D - asegurar transparencia */
+canvas {
+  background: transparent !important;
+}
+
+/* Transición suave para cambios de tamaño de ventana */
+.hero-transition {
+  transition: all 0.5s ease-in-out;
+}
+
+/* Estilos específicos para el diseño móvil del Hero */
+@media (max-width: 768px) {
+  /* Contenedor de la mitad izquierda con la imagen */
+  .hero-mobile-image-container {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+  }
+  
+  /* Contenedor de la mitad derecha con el texto */
+  .hero-mobile-text-container {
+    background: linear-gradient(to left, rgba(240, 240, 240, 0.95), rgba(240, 240, 240, 0.85));
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 10;
+  }
+  
+  /* Efecto de borde para la división entre imagen y texto */
+  .hero-mobile-text-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.2), transparent);
+  }
+  
+  /* Estilo para la imagen cortada */
+  .hero-mobile-image {
+    transition: transform 0.5s ease-out;
+    filter: contrast(1.05) brightness(1.02); /* Mejorar ligeramente el contraste */
+    object-position: left center; /* Asegurar que se muestre la mitad izquierda */
+  }
+  
+  /* Efecto hover para la imagen en móvil */
+  .hero-mobile-image:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Estilos específicos para el switch en móviles */
+  .mobile-scroll-indicator {
+    border-color: #000000 !important;
+    border: 4px solid #000000 !important;
+  }
+  
+  .mobile-scroll-dot {
+    background-color: #000000 !important;
+    background: #000000 !important;
+  }
+  
+  /* Anular los estilos de tamaño grande para los IDs en el menú móvil */
+  .menu #about,
+  .menu #projects,
+  .menu #contact {
+    margin-left: 0;
+    font-size: inherit;
+    letter-spacing: normal;
+  }
+
+  /* Ajustar la posición del título Overview en móviles */
+  #about h2 {
+    margin-top: 5rem !important;
+  }
+  
+  /* Añadir más espacio en la parte superior de la sección About en móviles */
+  #about {
+    padding-top: 4rem !important;
+  }
+  
+  /* Ajustar el contenedor principal del About en móviles */
+  #about > div {
+    margin-top: 2rem !important;
+  }
+}
+
+.nav-links::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 3px;
+  background: #292929;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links:hover::after {
+  width: 70%;
+}
+
+/* Estilos para los títulos de sección - solo aplicar fuera del menú móvil */
+.section-title #about {
+  margin-left: -24px;
+  font-size: 100px;
+}
+
+.section-title #projects {
+  margin-left: -2px;
+  font-size: 100px;
+}
+
+.section-title #contact {
+  margin-left: -20px;
+  font-size: 95px;
+  letter-spacing: -2px;
+}
+
+/* Asegurar que los IDs en el menú móvil no hereden estos estilos */
+.menu #about,
+.menu #projects,
+.menu #contact {
+  margin-left: 0;
+  font-size: inherit;
+  letter-spacing: normal;
+}
+
+/* Estilos específicos para los enlaces del menú móvil */
+.mobile-nav-link {
+  font-size: 16px !important;
+  letter-spacing: 1px !important;
+  display: block;
+  width: 100%;
+}
+
+.mobile-nav-link span {
+  font-size: 16px !important;
+}
+
+.hero-heading {
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.hash-span {
+  margin-top: -100px;
+  padding-bottom: 100px;
+  display: block;
+}
+
+.vertical-timeline.vertical-timeline-custom-line::before {
+  background: rgb(66, 66, 66);
+  background: linear-gradient(
+    180deg,
+    rgba(66, 66, 66, 0.8) 40%,
+    rgba(234, 234, 236, 0.45) 100%
+  );
+}
+
+.vertical-timeline-element-icon {
+  box-shadow: 0 0 0 4px #afafafd2, inset 0 2px 0 rgba(0, 0, 0, 0.08),
+    0 3px 0 4px rgba(0, 0, 0, 0.05);
+}
+
+.glassmorphism {
+  background: rgba(20, 20, 20, 0.7);
+  box-shadow: 0 8px 32px 0 rgba(133, 133, 133, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.card-shadow {
+  box-shadow: rgba(155, 155, 155, 0.3) 0 2px 6px,
+    rgba(155, 155, 155, 0.22) 0 0 4px;
+  border-radius: 24px;
+}
+
+.black-gradient {
+  background: #000000;
+  background: -webkit-linear-gradient(to right, #434343, #000000);
+  background: linear-gradient(to right, #434343, #000000);
+}
+
+.bw-gradient {
+  background: rgb(10, 10, 10);
+  background: linear-gradient(
+    180deg,
+    rgba(10, 10, 10, 0.8) 40%,
+    rgba(153, 153, 161, 0) 70%
+  );
+}
+
+.card-gradient {
+  background: rgb(244, 244, 246);
+  background: linear-gradient(
+    158deg,
+    rgba(153, 153, 161, 1) 25%,
+    rgba(153, 153, 161, 1) 100%
+  );
+}
+
+/* canvas- styles */
+.canvas-loader {
+  font-size: 10px;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  position: relative;
+  text-indent: -9999em;
+  animation: mulShdSpin 1.1s infinite ease;
+  transform: translateZ(0);
+}
+
+@keyframes mulShdSpin {
+  0%,
+  100% {
+    box-shadow: 0em -2.6em 0em 0em #ffffff,
+      1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2),
+      2.5em 0em 0 0em rgba(255, 255, 255, 0.2),
+      1.75em 1.75em 0 0em rgba(255, 255, 255, 0.2),
+      0em 2.5em 0 0em rgba(255, 255, 255, 0.2),
+      -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.2),
+      -2.6em 0em 0 0em rgba(255, 255, 255, 0.5),
+      -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.7);
+  }
+  12.5% {
+    box-shadow: 0em -2.6em 0em 0em rgba(255, 255, 255, 0.7),
+      1.8em -1.8em 0 0em #ffffff, 2.5em 0em 0 0em rgba(255, 255, 255, 0.2),
+      1.75em 1.75em 0 0em rgba(255, 255, 255, 0.2),
+      0em 2.5em 0 0em rgba(255, 255, 255, 0.2),
+      -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.2),
+      -2.6em 0em 0 0em rgba(255, 255, 255, 0.2),
+      -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.5);
+  }
+  25% {
+    box-shadow: 0em -2.6em 0em 0em rgba(255, 255, 255, 0.5),
+      1.8em -1.8em 0 0em rgba(255, 255, 255, 0.7), 2.5em 0em 0 0em #ffffff,
+      1.75em 1.75em 0 0em rgba(255, 255, 255, 0.2),
+      0em 2.5em 0 0em rgba(255, 255, 255, 0.2),
+      -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.2),
+      -2.6em 0em 0 0em rgba(255, 255, 255, 0.2),
+      -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2);
+  }
+  37.5% {
+    box-shadow: 0em -2.6em 0em 0em rgba(255, 255, 255, 0.2),
+      1.8em -1.8em 0 0em rgba(255, 255, 255, 0.5),
+      2.5em 0em 0 0em rgba(255, 255, 255, 0.7), 1.75em 1.75em 0 0em #ffffff,
+      0em 2.5em 0 0em rgba(255, 255, 255, 0.2),
+      -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.2),
+      -2.6em 0em 0 0em rgba(255, 255, 255, 0.2),
+      -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2);
+  }
+  50% {
+    box-shadow: 0em -2.6em 0em 0em rgba(255, 255, 255, 0.2),
+      1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2),
+      2.5em 0em 0 0em rgba(255, 255, 255, 0.5),
+      1.75em 1.75em 0 0em rgba(255, 255, 255, 0.7), 0em 2.5em 0 0em #ffffff,
+      -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.2),
+      -2.6em 0em 0 0em rgba(255, 255, 255, 0.2),
+      -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2);
+  }
+  62.5% {
+    box-shadow: 0em -2.6em 0em 0em rgba(255, 255, 255, 0.2),
+      1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2),
+      2.5em 0em 0 0em rgba(255, 255, 255, 0.2),
+      1.75em 1.75em 0 0em rgba(255, 255, 255, 0.5),
+      0em 2.5em 0 0em rgba(255, 255, 255, 0.7), -1.8em 1.8em 0 0em #ffffff,
+      -2.6em 0em 0 0em rgba(255, 255, 255, 0.2),
+      -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2);
+  }
+  75% {
+    box-shadow: 0em -2.6em 0em 0em rgba(255, 255, 255, 0.2),
+      1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2),
+      2.5em 0em 0 0em rgba(255, 255, 255, 0.2),
+      1.75em 1.75em 0 0em rgba(255, 255, 255, 0.2),
+      0em 2.5em 0 0em rgba(255, 255, 255, 0.5),
+      -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.7), -2.6em 0em 0 0em #ffffff,
+      -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2);
+  }
+  87.5% {
+    box-shadow: 0em -2.6em 0em 0em rgba(255, 255, 255, 0.2),
+      1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2),
+      2.5em 0em 0 0em rgba(255, 255, 255, 0.2),
+      1.75em 1.75em 0 0em rgba(255, 255, 255, 0.2),
+      0em 2.5em 0 0em rgba(255, 255, 255, 0.2),
+      -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.5),
+      -2.6em 0em 0 0em rgba(255, 255, 255, 0.7), -1.8em -1.8em 0 0em #ffffff;
+  }
+}

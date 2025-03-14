@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script type="module">
+import RefreshRuntime from "/@react-refresh"
+RefreshRuntime.injectIntoGlobalHook(window)
+window.$RefreshReg$ = () => {}
+window.$RefreshSig$ = () => (type) => type
+window.__vite_plugin_react_preamble_installed__ = true
+</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Otty's Portfolio - UI/UX Designer crafting intuitive digital experiences with a focus on user-centered design and accessibility." />
+    <meta name="theme-color" content="#ffffff" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/logo.png" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.json" />
+    
+    <!-- Preconnect to origins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!-- Preload critical CSS -->
+    <link rel="preload" href="/src/index.css" as="style" />
+    
+    <!-- Inline critical CSS -->
+    <style>
+      /* Estilos críticos para evitar FOUC (Flash of Unstyled Content) */
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+        font-family: sans-serif;
+      }
+      #root {
+        height: 100%;
+        width: 100%;
+      }
+      .loader {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+      }
+      .loader-spinner {
+        border: 5px solid #f3f3f3;
+        border-top: 5px solid #555;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        animation: spin 1s linear infinite;
+      }
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+    </style>
+    
+    <title>Otty | Portfolio</title>
+  </head>
+  <body class="bg-night">
+    <div id="root">
+      <!-- Fallback para cuando JavaScript está deshabilitado o durante la carga -->
+      <div class="loader">
+        <div class="loader-spinner"></div>
+      </div>
+    </div>
+    
+    <!-- Script principal -->
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

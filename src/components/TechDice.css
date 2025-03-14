@@ -1,0 +1,117 @@
+.tech-dice-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+  transform: translateY(0);
+  will-change: transform;
+  position: relative;
+  background: transparent !important;
+}
+
+.tech-dice-container:hover {
+  transform: translateY(-5px);
+}
+
+.tech-dice-canvas {
+  width: 100% !important;
+  height: 100% !important;
+  background: transparent !important;
+  transition: filter 0.2s ease;
+  will-change: filter;
+}
+
+.dice-scene-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent !important;
+}
+
+.tech-dice-container:hover .tech-dice-canvas {
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.3));
+}
+
+.tech-name {
+  position: absolute;
+  bottom: -24px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+
+.tech-dice-container:hover .tech-name {
+  opacity: 1;
+}
+
+/* Efecto de resplandor simplificado */
+.tech-dice-glow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+
+.tech-dice-container:hover .tech-dice-glow {
+  opacity: 1;
+}
+
+/* Animación de entrada simplificada */
+@keyframes diceAppear {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dice-appear {
+  animation: diceAppear 0.5s ease forwards;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .tech-dice-container {
+    width: 90px !important;
+    height: 90px !important;
+  }
+  
+  .tech-dice-container:hover {
+    transform: translateY(-3px);
+  }
+}
+
+@media (max-width: 640px) {
+  .tech-dice-container {
+    width: 80px !important;
+    height: 80px !important;
+  }
+  
+  .tech-name {
+    font-size: 0.75rem;
+    bottom: -20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tech-dice-container {
+    width: 70px !important;
+    height: 70px !important;
+  }
+} 

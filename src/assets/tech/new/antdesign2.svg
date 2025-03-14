@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- Rombo exterior -->
+  <path d="M100 0L0 100l100 100 100-100L100 0z" stroke="white" stroke-width="8" fill="none"/>
+  
+  <!-- Rombo interior -->
+  <path d="M100 40L40 100l60 60 60-60L100 40z" stroke="white" stroke-width="4" fill="none"/>
+  
+  <!-- Círculo central -->
+  <circle cx="100" cy="100" r="30" fill="white"/>
+</svg> 

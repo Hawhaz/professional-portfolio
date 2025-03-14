@@ -1,0 +1,9 @@
+.linklistmodule{position:relative;zoom:1;width:100%;display:block}
+.linklistmodule::after,.linklistmodule::before{content:' ';display:block;height:0;width:0;overflow:hidden}
+.linklistmodule::after{clear:both}
+.linklistmodule__base{padding:0 16px}
+.prefooter__base .linklistmodule__base{padding:0}
+.linklistmodule__title{font-family:BentonSansBBVA-Medium,Helvetica,Arial,sans-serif;font-size:15px;line-height:24px;margin-bottom:20px}
+.linklistmodule__list{-webkit-columns:2;-moz-columns:2;columns:2}
+.linklistmodule__list .link__content{margin-bottom:8px;margin-top:0;margin-left:0;display:inline-block;font-weight:400;text-align:left}
+.linklistmodule__list .link__content .bbva-icon__2_017_forward{display:none}

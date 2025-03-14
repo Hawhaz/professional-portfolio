@@ -1,0 +1,85 @@
+:root{--megamenu-side-container-background-color:#072146;--megamenu-main-container-background-color:#043263;--megamenu-divider-line-color:#29507a}
+.dark-theme{--megamenu-side-container-background-color:#132330;--megamenu-main-container-background-color:#050b0f;--megamenu-divider-line-color:#778892}
+.megamenu{position:relative;zoom:1;width:100%;display:block}
+.megamenu::after,.megamenu::before{content:' ';display:block;height:0;width:0;overflow:hidden}
+.megamenu::after{clear:both}
+.megamenu__fixed{position:fixed;z-index:15;width:100%;top:0;background-color:var(--megamenu-side-container-background-color,#072146);margin-top:-120vh;max-height:calc(100vh - 64px);min-height:calc(100vh - 64px);overflow:hidden;-webkit-transition:margin-top .33333s;transition:margin-top .33333s}
+.megamenu__fixed .megamenu--preventfocus{display:none}
+.megamenu__trigger{cursor:pointer;width:100%}
+.megamenu__trigger__close i{font-size:24px;margin-left:8px}
+.megamenu__trigger.megamenu--open .megamenu__trigger__open{display:none}
+.megamenu__trigger.megamenu--open .megamenu__trigger__close{display:-webkit-box;display:-ms-flexbox;display:flex}
+.megamenu__container{display:block;float:left;width:100%;position:relative}
+.search--desktop+.wrapper .megamenu__container{z-index:15}
+.megamenu__navigation__container{background-color:var(--megamenu-side-container-background-color,#072146);position:absolute;padding:0;overflow-y:auto;right:0;top:0;z-index:15}
+.keyboard-focus .megamenu__navigation__container a:focus{outline:1px solid #fff;outline-offset:4px}
+.megamenu__navigation__link{font-family:BentonSansBBVA-Book,Helvetica,Arial,sans-serif;font-size:15px;line-height:24px;color:#fff;opacity:.7}
+.megamenu__navigation__link--active,.megamenu__navigation__link:active,.megamenu__navigation__link:focus,.megamenu__navigation__link:hover{opacity:1}
+.megamenu__navigation__link--active .bbva-icon,.megamenu__navigation__link:active .bbva-icon,.megamenu__navigation__link:focus .bbva-icon,.megamenu__navigation__link:hover .bbva-icon{opacity:1}
+.megamenu__navigation__link:focus{outline:0}
+.megamenu__navigation__text{display:inline-block;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;max-width:calc(100% - 22px)}
+.megamenu__navigation__home{font-family:BentonSansBBVA-Book,Helvetica,Arial,sans-serif;font-size:16px;line-height:24px;color:#fff;line-height:57px;width:100%;max-height:100%;display:block;padding:0 16px;-webkit-box-sizing:border-box;box-sizing:border-box;opacity:.7;border-bottom:1px solid var(--megamenu-divider-line-color,#29507a)}
+.megamenu__navigation__home .bbva-icon{color:#49a5e6;line-height:20px;font-size:20px}
+.megamenu__navigation__highlight{font-family:BentonSansBBVA-Medium,Helvetica,Arial,sans-serif;font-size:15px;line-height:24px;color:#fff;opacity:.7}
+.megamenu__navigation__highlight--active,.megamenu__navigation__highlight:active,.megamenu__navigation__highlight:focus,.megamenu__navigation__highlight:hover{opacity:1}
+.megamenu__navigation__title{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+.megamenu__flyout__extraslinks{padding:0 16px;display:block;float:left;width:100%}
+.megamenu__flyout__extraslinks:last-child,.megamenu__flyout__extraslinks:nth-last-child(2){padding-bottom:112px}
+.megamenu__flyout__extraslinks .accessmobile{border-top:1px solid var(--megamenu-divider-line-color,#2b4261);padding-top:16px;padding-bottom:16px}
+.megamenu__flyout__extraslinks--bottom-divider>.accessmobile{border-bottom:1px solid var(--megamenu-divider-line-color,#2b4261)}
+.megamenu__flyout__extraslinks .header__access,.megamenu__flyout__extraslinks .header__createaccount{font-family:BentonSansBBVA-Book,Helvetica,Arial,sans-serif;font-size:12px;line-height:16px;margin:0;line-height:32px}
+.megamenu__flyout__extraslinks .header__access{color:#fff;opacity:.7}
+.megamenu__flyout__extraslinks .header__access .bbva-icon{color:#1973b8}
+.megamenu__flyout--nonmobile{overflow-y:auto}
+.megamenu__flyout__title{font-family:BentonSansBBVA-Medium,Helvetica,Arial,sans-serif;font-size:20px;line-height:24px;color:#fff}
+.megamenu__flyout__linkwithicon{margin-top:0;padding-top:32px;padding-bottom:32px;width:100%;display:block}
+.megamenu__flyout--langs .megamenu__flyout__linkwithicon{padding-bottom:0}
+.megamenu__flyout__linkwithicon .linkwithicon__link{font-family:BentonSansBBVA-Book,Helvetica,Arial,sans-serif;font-size:12px;line-height:16px;color:#fff;opacity:.7}
+.megamenu__flyout__linkwithicon .linkwithicon__link:focus,.megamenu__flyout__linkwithicon .linkwithicon__link:hover{opacity:1}
+.megamenu__flyout__linkwithicon .linkwithicon__link:hover .bbva-svgicon--megamenu{-webkit-filter:brightness(0) saturate(100%) invert(59%) sepia(29%) saturate(1026%) hue-rotate(164deg) brightness(96%) contrast(88%);filter:brightness(0) saturate(100%) invert(59%) sepia(29%) saturate(1026%) hue-rotate(164deg) brightness(96%) contrast(88%)}
+.megamenu__flyout__linkwithicon .bbva-svgicon--megamenu{-webkit-filter:brightness(0) saturate(100%) invert(67%) sepia(13%) saturate(2376%) hue-rotate(174deg) brightness(101%) contrast(104%);filter:brightness(0) saturate(100%) invert(67%) sepia(13%) saturate(2376%) hue-rotate(174deg) brightness(101%) contrast(104%)}
+.megamenu__flyout__themes{float:left;padding:0 16px;width:100%}
+.megamenu__flyout__themes:last-child,.megamenu__flyout__themes:nth-last-child(2){margin-bottom:112px}
+.megamenu__flyout__themes__list{font-family:BentonSansBBVA-Book,Helvetica,Arial,sans-serif;font-size:12px;line-height:16px;color:#fff;padding:16px 0 16px 8px;margin-bottom:8px}
+.megamenu__flyout__themes__list--main-options{margin-bottom:8px;display:-webkit-box;display:-ms-flexbox;display:flex}
+.megamenu__flyout__themes__item,.megamenu__flyout__themes__item__mobile{cursor:pointer;opacity:.7}
+.megamenu__flyout__themes__item:nth-of-type(1),.megamenu__flyout__themes__item__mobile:nth-of-type(1){margin-right:12px}
+.megamenu__flyout__themes__item--active,.megamenu__flyout__themes__item:hover,.megamenu__flyout__themes__item__mobile--active,.megamenu__flyout__themes__item__mobile:hover{opacity:1}
+.megamenu__flyout__themes__item--active,.megamenu__flyout__themes__item__mobile--active{font-family:BentonSansBBVA-Medium,Helvetica,Arial,sans-serif;font-size:12px;line-height:16px;opacity:1}
+.megamenu__flyout__secondary .accordion__list__content{position:relative}
+.megamenu__flyout__secondary.megamenu--expanded{pointer-events:initial;opacity:1}
+.megamenu__body--lock .general-wrapper{overflow:hidden;position:fixed;height:100vh;width:100%}
+.megamenu__body--lock .mainnavigation__link{border-bottom:0}
+.megamenu__body--lock .megamenu__fixed{border-top:1px solid rgba(255,255,255,.15)}
+.megamenu--open .megamenu__fixed{margin-top:64px;top:0;overflow:hidden}
+.megamenu--hidden{display:none}
+.megamenu__stickybtn{will-change:background-position;background-size:210% 100%;background-position:99% center;background-repeat:no-repeat;-webkit-transition:background-position .66667s cubic-bezier(.24,.22,.31,1.07);transition:background-position .66667s cubic-bezier(.24,.22,.31,1.07);background-color:var(--megamenu-side-container-background-color,#072146);background-image:linear-gradient(100deg,#043263 50%,var(--megamenu-side-container-background-color,#072146) 50%);z-index:18;-webkit-box-sizing:border-box;box-sizing:border-box;width:100%;height:72px;bottom:0;left:0;text-align:left}
+.keyboard-focus .megamenu__stickybtn:focus{outline:1px solid #fff;outline-offset:-4px}
+.megamenu--open .megamenu__stickybtn{position:fixed}
+.megamenu__stickybtn .bbva-svgicon{-webkit-filter:brightness(0) saturate(100%) invert(78%) sepia(13%) saturate(1766%) hue-rotate(2deg) brightness(105%) contrast(94%);filter:brightness(0) saturate(100%) invert(78%) sepia(13%) saturate(1766%) hue-rotate(2deg) brightness(105%) contrast(94%)}
+.megamenu__stickybtn::before{content:'';position:absolute;right:0;bottom:100%;left:0;background-image:linear-gradient(to top,var(--megamenu-side-container-background-color,#072146),rgba(255,255,255,0));opacity:1;height:88px;pointer-events:none}
+@media(min-width:0) and (max-width:991px){.megamenu__fixed{position:relative}
+.megamenu__navigation__container{position:relative;overflow-y:visible}
+.megamenu__navigation{width:100%;position:relative;float:left;clear:both;margin:0;padding:0}
+.megamenu__navigation__link{width:100%;max-height:100%;display:block;padding:0 24px;line-height:56px;-webkit-box-sizing:border-box;box-sizing:border-box}
+.accordion--mobile .megamenu__navigation__link.accordion__list__item__heading{font-family:BentonSansBBVA-Book,Helvetica,Arial,sans-serif;font-size:16px;line-height:24px;color:#fff;opacity:1;border-bottom:1px solid var(--megamenu-divider-line-color,#29507a);line-height:24px;padding:16px 16px 14px 24px}
+.accordion--mobile .megamenu__navigation__link.accordion--nosubmenu{display:inline-block;border-bottom:1px solid var(--megamenu-divider-line-color,#29507a)}
+.megamenu__navigation__highlight{padding:0 24px;display:-webkit-box;display:-ms-flexbox;display:flex;line-height:16px;min-height:56px}
+.megamenu__flyout--nonmobile{display:none}
+.megamenu__flyout__list{background-color:var(--megamenu-main-container-background-color,#043263)}
+.megamenu__flyout__title{display:none}
+.megamenu__flyout__linkwithicon--mobile{background-color:var(--megamenu-side-container-background-color,#072146);display:block;float:left;width:100%;clear:both;padding:16px 16px}
+.megamenu__flyout__secondary .accordion__list__content{padding-left:24px;overflow-y:hidden}
+.megamenu__flyout__secondary{background-color:var(--megamenu-side-container-background-color,#072146)}
+.megamenu__flyout__secondary .megamenu__flyout__linkwithicon{width:calc(100% - 32px);border-top:1px solid #2b4261;margin:0 16px;padding:0}
+.megamenu__flyout__secondary .megamenu__flyout__linkwithicon .megamenu__navigation__link{padding:0 8px}
+.megamenu__body--lock.sticky .megamenu__fixed{margin-top:0;-webkit-transition:none;transition:none}
+.megamenu--open .megamenu__fixed{overflow:auto;max-height:calc(100vh - 64px);min-height:auto}
+.megamenu--open .megamenu__fixed--android{padding-bottom:50px}
+.megamenu--open .megamenu__fixed--ios{padding-bottom:100px}
+.megamenu--open.header__container{width:100%;position:fixed}
+}
+@media(min-width:0) and (max-width:1199px){.megamenu__flyout__title{margin-bottom:8px}
+}
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active){.megamenu__fixed{margin-top:-120%;-ms-overflow-style:none}
+}

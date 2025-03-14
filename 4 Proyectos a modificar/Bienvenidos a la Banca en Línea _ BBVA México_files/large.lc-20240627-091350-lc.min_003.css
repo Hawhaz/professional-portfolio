@@ -1,0 +1,13 @@
+@media(min-width:992px){.accordion___container{margin-top:8px}
+.accordion__background{padding:56px}
+.accordion__title{font-size:36px;line-height:40px}
+.accordion__title{max-width:80%;margin:0 auto 32px}
+.accordion--full .accordion--open>.accordion__list__item__heading{font-size:22px;line-height:32px}
+.accordion--full .accordion__list__item__heading,.accordion--full .accordion__list__item__link{font-size:18px}
+}
+@media(min-width:0) and (max-width:991px) and (min-width:992px){.accordion--mobile .accordion__title{font-size:22px;line-height:32px}
+}
+@media(min-width:992px) and (max-width:1199px){.tabs__content__item .accordion{margin:0 calc((100vw - 928px)/ -2)}
+}
+@media(min-width:1200px){.tabs__content__item .accordion{margin:0 calc((100vw - 1144px)/ -2)}
+}

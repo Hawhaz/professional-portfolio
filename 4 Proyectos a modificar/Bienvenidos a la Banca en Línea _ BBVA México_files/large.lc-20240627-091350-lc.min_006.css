@@ -1,0 +1,28 @@
+@media(min-width:992px){.megamenu__cards{overflow-y:scroll;background-color:var(--megamenu-main-container-background-color,#043263);max-height:calc(100vh - 88px);min-height:calc(100vh - 88px)}
+.sticky .megamenu__cards{max-height:calc(100vh - 64px);min-height:calc(100vh - 64px)}
+.megamenu__cards.container{-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-sizing:content-box;box-sizing:content-box;width:736px;padding-right:224px;padding-left:16px}
+.megamenu__cards.container *{-webkit-box-sizing:border-box;box-sizing:border-box}
+.megamenu__cards .swiper-pagination .swiper-pagination-bullet{height:14px;width:14px}
+.megamenu__cards .swiper-pagination .swiper-pagination-bullet-active{height:12px;width:12px}
+.megamenu__cards--compact .megamenu__cards__container{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;-ms-flex-wrap:nowrap;flex-wrap:nowrap;width:100%}
+.megamenu__cards--compact .megamenu__title{-ms-flex-item-align:start;align-self:flex-start}
+.megamenu__cards--compact .megamenu__card.swiper-slide{-ms-flex-item-align:stretch;align-self:stretch}
+.megamenu__cards--compact .megamenu__cardlist{-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-transition-delay:0;transition-delay:0}
+.megamenu__cards--compact .megamenu__card,.megamenu__cards--compact .megamenu__card.swiper-slide{-ms-flex-wrap:nowrap;flex-wrap:nowrap}
+.megamenu__cards--compact .swiper-button-next,.megamenu__cards--compact .swiper-button-prev{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;width:24px;position:relative;top:0;margin:16px 0 0;padding:0;background:#004481;height:auto;-ms-flex-item-align:stretch;align-self:stretch}
+.megamenu__cards--compact .swiper-button-next:hover,.megamenu__cards--compact .swiper-button-prev:hover{background:#1464a5}
+.megamenu__cards--compact .swiper-button-next.swiper-button-lock,.megamenu__cards--compact .swiper-button-prev.swiper-button-lock{display:none}
+.megamenu__cards--compact .swiper-button-next .bbva-icon,.megamenu__cards--compact .swiper-button-prev .bbva-icon{margin:0;width:100%;text-align:center;color:#fff;margin-top:-8px}
+.megamenu__cards__title{font-size:22px;line-height:32px}
+.megamenu__card,.megamenu__card.swiper-slide{width:33.33333%;margin:8px 0}
+.megamenu__card .megamenu__card__image,.megamenu__card.swiper-slide .megamenu__card__image{position:relative;top:0;will-change:top;-webkit-transition:top .16667s cubic-bezier(.66,-.1,.74,.73);transition:top .16667s cubic-bezier(.66,-.1,.74,.73)}
+.megamenu__card.swiper-slide__link:focus,.megamenu__card.swiper-slide__link:hover,.megamenu__card__link:focus,.megamenu__card__link:hover{background:#1464a5}
+.megamenu__card.swiper-slide__link:focus .megamenu__card__image,.megamenu__card.swiper-slide__link:hover .megamenu__card__image,.megamenu__card__link:focus .megamenu__card__image,.megamenu__card__link:hover .megamenu__card__image{top:-16px}
+}
+@media(min-width:1200px){.megamenu__cards.container{width:850px;padding-right:326px}
+.megamenu__cards.container{width:850px;padding-right:326px}
+}
+@media(min-width:600px) and (max-width:991px){.megamenu__cards--compact .swiper-container{width:calc(100vw - 48px);margin-left:24px}
+.megamenu__alert{padding:0 32px}
+.megamenu__card,.megamenu__card.swiper-slide{width:calc(100vw - 48px)}
+}

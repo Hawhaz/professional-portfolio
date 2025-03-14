@@ -1,0 +1,42 @@
+@media(min-width:600px){.godigital__title{margin:0 auto 16px}
+.godigital__item{width:100%;padding:0}
+.godigital__card__text{height:320px;padding:16px 32px}
+.godigital__card__text{padding:16px 44px}
+.godigital__card__text--center{min-height:320px}
+.godigital__card__text .bbva-icon{margin-bottom:24px}
+.godigital__card__text__subtitle{min-width:248px}
+}
+@media(min-width:600px) and (max-width:991px){.godigital__grid{-webkit-box-sizing:border-box;box-sizing:border-box;width:100%;float:left;padding-left:16px;padding-right:16px;padding-top:16px;padding-bottom:24px}
+.godigital__subtitle{margin-bottom:16px}
+}
+@media(min-width:992px){.animations__godigital .godigital__card__text__icon{opacity:1;-webkit-transition:opacity .66667s .33333s cubic-bezier(.24,.22,.31,1.07);transition:opacity .66667s .33333s cubic-bezier(.24,.22,.31,1.07)}
+.animations__godigital .godigital__card__text__rte.rte{will-change:opacity;max-height:none;overflow:hidden;opacity:0;-webkit-transition:opacity .66667s .33333s cubic-bezier(.24,.22,.31,1.07);transition:opacity .66667s .33333s cubic-bezier(.24,.22,.31,1.07)}
+.animations__godigital .godigital__card__text__container{will-change:background-position;background-image:linear-gradient(-10deg,rgba(7,33,70,.9) 50%,transparent 50%);background-size:100% 300%;background-repeat:no-repeat;background-position:center 12%;-webkit-transition:background-position .66667s cubic-bezier(.61,0,.39,1);transition:background-position .66667s cubic-bezier(.61,0,.39,1)}
+.animations__godigital .godigital__card__text__content{will-change:transform;vertical-align:none;height:100%;-webkit-transition:-webkit-transform .33333s .33333s cubic-bezier(.24,.22,.31,1.07);transition:-webkit-transform .33333s .33333s cubic-bezier(.24,.22,.31,1.07);transition:transform .33333s .33333s cubic-bezier(.24,.22,.31,1.07);transition:transform .33333s .33333s cubic-bezier(.24,.22,.31,1.07),-webkit-transform .33333s .33333s cubic-bezier(.24,.22,.31,1.07)}
+.animations__godigital .godigital__overlay{display:none}
+.animations__godigital:focus .godigital__card__text__content,.animations__godigital:hover .godigital__card__text__content{-webkit-transform:translate(0,2em);transform:translate(0,2em)}
+.animations__godigital:focus .godigital__card__text__container,.animations__godigital:hover .godigital__card__text__container{-webkit-transition-delay:0;transition-delay:0;background-position:center 88%}
+.animations__godigital:focus .godigital__card__text__rte.rte,.animations__godigital:hover .godigital__card__text__rte.rte{opacity:1}
+.godigital__title{font-size:36px;line-height:40px}
+.godigital__title{max-width:80%}
+.godigital__card{width:100%}
+.godigital__card--animated:focus .godigital__card--background .godigital__card__overlay,.godigital__card--animated:focus .godigital__card--sideimage .godigital__card__overlay,.godigital__card--animated:hover .godigital__card--background .godigital__card__overlay,.godigital__card--animated:hover .godigital__card--sideimage .godigital__card__overlay{height:100%;opacity:.9}
+.godigital__card--animated:focus .godigital__card--background .godigital__card__text__icon,.godigital__card--animated:focus .godigital__card--sideimage .godigital__card__text__icon,.godigital__card--animated:hover .godigital__card--background .godigital__card__text__icon,.godigital__card--animated:hover .godigital__card--sideimage .godigital__card__text__icon{opacity:0}
+.godigital__card--animated:focus .godigital__card--background .godigital__card__text__rte,.godigital__card--animated:focus .godigital__card--sideimage .godigital__card__text__rte,.godigital__card--animated:hover .godigital__card--background .godigital__card__text__rte,.godigital__card--animated:hover .godigital__card--sideimage .godigital__card__text__rte{max-height:1200px;opacity:1}
+.godigital__card--animated:focus .godigital__card--background .godigital__card__text__rte ul,.godigital__card--animated:focus .godigital__card--sideimage .godigital__card__text__rte ul,.godigital__card--animated:hover .godigital__card--background .godigital__card__text__rte ul,.godigital__card--animated:hover .godigital__card--sideimage .godigital__card__text__rte ul{margin-left:0}
+.godigital__card--animated:focus .godigital__card--background .godigital__image,.godigital__card--animated:hover .godigital__card--background .godigital__image{width:105%;height:105%;top:-5%;left:-2.5%;right:-2.5%}
+.godigital__card--animated:focus .godigital__card--sideimage .godigital__image,.godigital__card--animated:hover .godigital__card--sideimage .godigital__image{padding:20px;-webkit-transition:all .4s ease-in-out;transition:all .4s ease-in-out}
+.godigital__card__text--center{display:block}
+.godigital__card__text__content{display:block;-webkit-transform:translate(0,7.5em);transform:translate(0,7.5em)}
+.godigital__card__text .bbva-icon{font-size:40px}
+.godigital__card__text__title{font-size:26px}
+.godigital__card__text__title{min-width:248px}
+.godigital__card__text__rte{max-height:1px;opacity:0;color:#fff;-webkit-transition:max-height .4s ease-in-out,opacity .4s ease-in-out;transition:max-height .4s ease-in-out,opacity .4s ease-in-out}
+.godigital__overlay{background:#072146;bottom:0;z-index:3;height:80%;opacity:0;-webkit-transition:height .4s ease-in-out,opacity .4s ease-in-out;transition:height .4s ease-in-out,opacity .4s ease-in-out}
+}
+@media(min-width:992px) and (max-width:1199px){.godigital__grid{width:928px;float:left;margin-left:16px;margin-right:16px;padding:32px 0 40px}
+}
+@media(min-width:1200px){.godigital__grid{width:1144px;float:left;margin-left:16px;margin-right:16px;padding:32px 0 40px}
+.godigital__item{width:50%}
+.godigital__card__text .bbva-icon{position:absolute;bottom:8px}
+}

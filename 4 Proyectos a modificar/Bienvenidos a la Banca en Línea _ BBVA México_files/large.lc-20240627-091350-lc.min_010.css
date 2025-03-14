@@ -1,0 +1,8 @@
+@media(min-width:1200px){.homemicroillustration__base{padding-top:88px;padding-bottom:88px}
+.homemicroillustration__item{width:360px;float:left;margin-left:16px;margin-right:16px}
+}
+@media(min-width:600px) and (max-width:991px){.homemicroillustration__base{padding:24px 0}
+}
+@media(min-width:992px) and (max-width:1199px){.homemicroillustration__base{padding-top:88px;padding-bottom:88px}
+.homemicroillustration__item{width:288px;float:left;margin-left:16px;margin-right:16px}
+}

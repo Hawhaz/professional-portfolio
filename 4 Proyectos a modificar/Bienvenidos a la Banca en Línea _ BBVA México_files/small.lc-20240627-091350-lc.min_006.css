@@ -1,0 +1,15 @@
+:root{--featuredoutstandingopportunity-background-light:#fff;--featuredoutstandingopportunity-background-dark:#f4f4f4;--featuredoutstandingopportunity-subtitle-color:#626262;--featuredoutstandingopportunity-title-color:#121212;--featuredoutstandingopportunity-title-icon-color:brightness(0) saturate(100%) invert(0) sepia(6%) saturate(2063%) hue-rotate(358deg) brightness(87%) contrast(86%)}
+.dark-theme{--featuredoutstandingopportunity-background-light:#091016;--featuredoutstandingopportunity-background-dark:#0e1a25;--featuredoutstandingopportunity-subtitle-color:#778892;--featuredoutstandingopportunity-title-color:#fff;--featuredoutstandingopportunity-title-icon-color:brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0) hue-rotate(204deg) brightness(104%) contrast(102%)}
+.featuredoutstandingopportunitycard__base{height:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;background-color:var(--featuredoutstandingopportunity-background-dark,#f4f4f4)}
+.background--100 .featuredoutstandingopportunitycard__base{background-color:var(--featuredoutstandingopportunity-background-light,#fff)}
+.featuredoutstandingopportunitycard__image{width:100%}
+.featuredoutstandingopportunitycard__imagelink{display:block;height:100%;position:relative}
+.bbva-svgicon+.featuredoutstandingopportunitycard__imagelink .featuredoutstandingopportunitycard__titlelink{padding-left:8px}
+.featuredoutstandingopportunitycard__img{-o-object-fit:cover;object-fit:cover;-o-object-position:center;object-position:center;height:210px}
+.featuredoutstandingopportunitycard__content{padding:32px 24px}
+.featuredoutstandingopportunitycard__title{font-family:BentonSansBBVA-Medium,Helvetica,Arial,sans-serif;font-size:22px;line-height:32px;width:100%;margin-bottom:8px}
+.featuredoutstandingopportunitycard__title .bbva-svgicon{-webkit-filter:var(--featuredoutstandingopportunity-title-icon-color,brightness(0) saturate(100%) invert(0) sepia(6%) saturate(2063%) hue-rotate(358deg) brightness(87%) contrast(86%));filter:var(--featuredoutstandingopportunity-title-icon-color,brightness(0) saturate(100%) invert(0) sepia(6%) saturate(2063%) hue-rotate(358deg) brightness(87%) contrast(86%));height:22px;width:22px;margin-right:0;top:2px;float:left}
+.featuredoutstandingopportunitycard__titlelink{color:var(--featuredoutstandingopportunity-title-color,#121212)}
+.featuredoutstandingopportunitycard__subtitle{color:var(--featuredoutstandingopportunity-subtitle-color,#626262);width:100%;margin-bottom:8px;display:block}
+@media screen and (-ms-high-contrast:active),(-ms-high-contrast:none){.featuredoutstandingopportunitycard__img{min-height:100%;display:block;position:absolute;top:-9999px;bottom:-9999px;left:-9999px;right:-9999px;margin:auto;width:auto;min-width:100%;max-width:none;-o-object-fit:cover;object-fit:cover}
+}

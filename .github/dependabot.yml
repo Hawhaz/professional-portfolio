@@ -1,0 +1,49 @@
+version: 2
+updates:
+  # Enable version updates for npm
+  - package-ecosystem: "npm"
+    # Look for `package.json` and `lock` files in the `root` directory
+    directory: "/"
+    # Check for updates once a week
+    schedule:
+      interval: "weekly"
+    # Specify labels for npm pull requests
+    labels:
+      - "npm"
+      - "dependencies"
+    # Allow up to 10 open pull requests for npm dependencies
+    open-pull-requests-limit: 10
+    # Assign someone to review the PR
+    assignees:
+      - "Hawhaz"
+    # Group all updates together
+    groups:
+      development-dependencies:
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"
+    # Raise pull requests for version updates to npm against the `main` branch
+    target-branch: "main"
+    # Use custom commit message
+    commit-message:
+      prefix: "chore"
+      include: "scope"
+
+  # Enable version updates for GitHub Actions
+  - package-ecosystem: "github-actions"
+    # Look for GitHub Actions workflow files in the `.github/workflows` directory
+    directory: "/"
+    # Check for updates once a week
+    schedule:
+      interval: "weekly"
+    # Specify labels for GitHub Actions pull requests
+    labels:
+      - "github-actions"
+      - "dependencies"
+    # Allow up to 5 open pull requests for GitHub Actions dependencies
+    open-pull-requests-limit: 5
+    # Assign someone to review the PR
+    assignees:
+      - "Hawhaz"

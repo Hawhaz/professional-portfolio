@@ -1,0 +1,85 @@
+# dependencies
+node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+/dist
+dist-ssr
+*.local
+out
+.next
+
+# logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# editor directories and files
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/launch.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+.history
+*.swp
+*.swo
+
+# misc
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.production
+.cache
+.temp
+.tmp
+.eslintcache
+.stylelintcache
+.turbo
+.vercel
+.netlify
+.serverless
+.fusebox
+.dynamodb
+.tern-port
+.yarn-integrity
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# Cursor specific
+.cursor/
+
+# Specific to this project
+temp_logos/
+*.ppm

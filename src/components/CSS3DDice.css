@@ -1,0 +1,249 @@
+/* Contenedor principal */
+.css3d-dice-container {
+  width: 112px;
+  height: 112px;
+  position: relative;
+  perspective: 1000px;
+  margin: 0;
+  padding: 0;
+  animation: diceAppear 0.5s ease forwards;
+  transform-style: preserve-3d;
+  transition: transform 0.2s ease;
+}
+
+.css3d-dice-container:hover {
+  transform: translateY(-5px);
+}
+
+/* Dado 3D */
+.css3d-dice {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease;
+  transform: rotateX(-15deg) rotateY(15deg);
+}
+
+/* Rotación al hacer hover */
+.css3d-dice.hovered {
+  transform: rotateX(-30deg) rotateY(45deg);
+}
+
+/* Caras del dado */
+.css3d-dice-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #333;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backface-visibility: visible;
+  transform-style: preserve-3d;
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Posicionamiento de las caras */
+.css3d-dice-face.front {
+  transform: translateZ(56px);
+}
+
+.css3d-dice-face.back {
+  transform: rotateY(180deg) translateZ(56px);
+}
+
+.css3d-dice-face.right {
+  transform: rotateY(90deg) translateZ(56px);
+}
+
+.css3d-dice-face.left {
+  transform: rotateY(-90deg) translateZ(56px);
+}
+
+.css3d-dice-face.top {
+  transform: rotateX(90deg) translateZ(56px);
+}
+
+.css3d-dice-face.bottom {
+  transform: rotateX(-90deg) translateZ(56px);
+}
+
+/* Iconos de tecnología */
+.tech-icon {
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+  filter: brightness(0) invert(1); /* Hacer que todos los iconos sean blancos */
+  opacity: 0.9;
+  transform: translateZ(1px);
+}
+
+/* Estilo específico para el logo de Next.js */
+.nextjs-icon {
+  filter: invert(1); /* Solo invertir colores sin cambiar el brillo */
+}
+
+/* Estilo específico para el logo de Ant Design */
+.ant-design-icon {
+  width: 80%;
+  height: 80%;
+  filter: none !important;
+  opacity: 1;
+}
+
+/* Estilo para el texto de Ant Design */
+.ant-design-text {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Estilo para iconos externos - también en blanco */
+.external-icon {
+  filter: brightness(0) invert(1) !important; /* Forzar que todos los iconos externos sean blancos */
+}
+
+/* Mejora para asegurar que todos los iconos se vean bien */
+.css3d-dice-face img {
+  max-width: 60%;
+  max-height: 60%;
+}
+
+/* Nombre de la tecnología - oculto */
+.tech-name {
+  display: none;
+}
+
+/* Animación de aparición */
+@keyframes diceAppear {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .css3d-dice-container {
+    width: 90px;
+    height: 90px;
+  }
+  
+  .css3d-dice-face.front,
+  .css3d-dice-face.back,
+  .css3d-dice-face.right,
+  .css3d-dice-face.left,
+  .css3d-dice-face.top,
+  .css3d-dice-face.bottom {
+    transform: translateZ(45px);
+  }
+  
+  .css3d-dice-face.back {
+    transform: rotateY(180deg) translateZ(45px);
+  }
+  
+  .css3d-dice-face.right {
+    transform: rotateY(90deg) translateZ(45px);
+  }
+  
+  .css3d-dice-face.left {
+    transform: rotateY(-90deg) translateZ(45px);
+  }
+  
+  .css3d-dice-face.top {
+    transform: rotateX(90deg) translateZ(45px);
+  }
+  
+  .css3d-dice-face.bottom {
+    transform: rotateX(-90deg) translateZ(45px);
+  }
+  
+  .css3d-dice-container:hover {
+    transform: translateY(-3px);
+  }
+}
+
+@media (max-width: 640px) {
+  .css3d-dice-container {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .css3d-dice-face.front,
+  .css3d-dice-face.back,
+  .css3d-dice-face.right,
+  .css3d-dice-face.left,
+  .css3d-dice-face.top,
+  .css3d-dice-face.bottom {
+    transform: translateZ(40px);
+  }
+  
+  .css3d-dice-face.back {
+    transform: rotateY(180deg) translateZ(40px);
+  }
+  
+  .css3d-dice-face.right {
+    transform: rotateY(90deg) translateZ(40px);
+  }
+  
+  .css3d-dice-face.left {
+    transform: rotateY(-90deg) translateZ(40px);
+  }
+  
+  .css3d-dice-face.top {
+    transform: rotateX(90deg) translateZ(40px);
+  }
+  
+  .css3d-dice-face.bottom {
+    transform: rotateX(-90deg) translateZ(40px);
+  }
+  
+  .tech-name {
+    font-size: 0.75rem;
+    bottom: -20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .css3d-dice-container {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .css3d-dice-face.front,
+  .css3d-dice-face.back,
+  .css3d-dice-face.right,
+  .css3d-dice-face.left,
+  .css3d-dice-face.top,
+  .css3d-dice-face.bottom {
+    transform: translateZ(35px);
+  }
+  
+  .css3d-dice-face.back {
+    transform: rotateY(180deg) translateZ(35px);
+  }
+  
+  .css3d-dice-face.right {
+    transform: rotateY(90deg) translateZ(35px);
+  }
+  
+  .css3d-dice-face.left {
+    transform: rotateY(-90deg) translateZ(35px);
+  }
+  
+  .css3d-dice-face.top {
+    transform: rotateX(90deg) translateZ(35px);
+  }
+  
+  .css3d-dice-face.bottom {
+    transform: rotateX(-90deg) translateZ(35px);
+  }
+} 
